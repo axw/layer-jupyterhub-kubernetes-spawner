@@ -1,0 +1,17 @@
+name: jupyterhub-kubernetes-spawner
+summary: <Fill in summary here>
+maintainer: Andrew Wilkins <andrew.wilkins@canonical.com>
+description: |
+  <Multi-line description here>
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: true
+series: [xenial]
+requires:
+  jupyterhub:
+    interface: jupyterhub-spawner
+    scope: container
+  kubernetes-api:
+    interface: http
